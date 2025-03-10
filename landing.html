@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeFoodie</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="icon" href="Images/taco.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+
+<body>
+    <header>
+        <!-- header here -->
+        <img class="mainimg" src="Images/mainimg1.jpg" alt="restaurant image">
+        <!--navigation bar here-->
+        <nav>
+            <ol class="navmenu">
+                <li><a href="Addresta.html">Add Restaurant</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ol>
+        </nav>
+        <div class="logo">
+            <h1>BeFoodie</h1>
+            <h3>Discover the best food and drinks in Banasthali</h3>
+            <div class="search">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" placeholder="Search">
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- main here -->
+        <!-- slider image here -->
+        <div class="slider-image">
+            <div class="slidebtn" id="back-arrow">
+                <img src="Images/previous.png" alt="previous icon">
+            </div>
+            <div class="gallery">
+                <div class="main-container">
+                    <div class="image">
+                        <img class="restaurant-image" src="Images/bella.jpg" alt="shanus">
+                        <span class="restaurant-name">Shanus</span>
+                        <span class="tag-line">Tag line here</span>
+                    </div>
+                    <div class="image">
+                        <img class="restaurant-image" src="Images/bella.jpg" alt="Fun n frolic">
+                        <span class="restaurant-name">Fun n' Frollic</span>
+                        <span class="tag-line">Tag line here</span>
+                    </div>
+                    <div class="image">
+                        <img class="restaurant-image" src="Images/bella.jpg" alt="Anpurna">
+                        <span class="restaurant-name">Aanpurna</span>
+                        <span class="tag-line">Tag line here</span>
+                    </div>
+                </div>
+                <div class="main-container">
+                    <div class="image">
+                        <img class="restaurant-image" src="Images/bella.jpg" alt="Bella Bites">
+                        <span class="restaurant-name">Bella Bites</span>
+                        <span class="tag-line">Tag line here</span>
+                    </div>
+                    <div class="image">
+                        <img class="restaurant-image" src="Images/Spicy.jpg" alt="spicy bite">
+                        <span class="restaurant-name">Spicy bite</span>
+                        <span class="tag-line">Tag line here</span>
+                    </div>
+                    <div class="image">
+                        <img class="restaurant-image" src="Images/Mukte.jpg" alt="Mukteswari">
+                        <span class="restaurant-name">Mukteswari</span>
+                        <span class="tag-line">Tag line here</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slidebtn" id="next-arrow">
+                <img src="Images/next.png" alt="next icon">
+            </div>
+        </div>
+        <script>
+            let scrollbox = document.querySelector('.gallery');
+            let backbtn = document.getElementById('back-arrow');
+            let nextbtn = document.getElementById('next-arrow');
+            scrollbox.addEventListener("Wheel", (evt) => {
+                evt.preventDefault();
+                scrollbox.scrollLeft += evt.deltaY;
+                scrollbox.style.scrollBehavior = "auto";
+            });
+            backbtn.addEventListener("click", () => {
+                scrollbox.style.scrollBehavior = "smooth";
+                scrollbox.scrollLeft -= 1200;
+            });
+            nextbtn.addEventListener("click", () => {
+                scrollbox.style.scrollBehavior = "smooth";
+                scrollbox.scrollLeft += 1200;
+            });
+        </script>
+        <!-- second part of main i.e. feedback starts here -->
+        <div class="main-second-part">
+            <h2>Feedback</h2>
+            <div class="feedback-box">
+                <div class="boxfeedback">
+                    <div class="feedback">
+                        <img class="profile" src="Images/taco.png">
+                        <p class="flex2">User1<br>
+                            <span class="star s1" data-rating="1">&#9733;</span>
+                            <span class="star s1" data-rating="1">&#9733;</span>
+                            <span class="star s1" data-rating="1">&#9733;</span>
+                            <span class="star s1" data-rating="1">&#9733;</span>
+                            <span class="star s1" data-rating="1">&#9733;</span>
+                        </p>
+                    </div>
+                    <p class="thoughts">adbnd dddhv acvdhnb cdughd sdghs DSDN </p>
+                </div>
+                <div class="boxfeedback">
+                    <div class="feedback">
+                        <img class="profile" src="Images/taco.png">
+                        <p class="flex2">User1<br>
+                            <span class="star" data-rating="1">&#9733;</span>
+                            <span class="star" data-rating="1">&#9733;</span>
+                            <span class="star" data-rating="1">&#9733;</span>
+                            <span class="star" data-rating="1">&#9733;</span>
+                            <span class="star" data-rating="1">&#9733;</span>
+                        </p>
+                    </div>
+                    <p class="thoughts">adbnd dddhv acvdhnb cdughd sdghs DSDN </p>
+                </div>
+                <div class="boxfeedback">
+                    <div class="feedback">
+                        <img class="profile" src="Images/taco.png">
+                        <p class="flex2">User1<br>
+                            <span class="star" data-rating="1">&#9733;</span>
+                            <span class="star" data-rating="1">&#9733;</span>
+                            <span class="star" data-rating="1">&#9733;</span>
+                            <span class="star" data-rating="1">&#9733;</span>
+                            <span class="star" data-rating="1">&#9733;</span>
+                        </p>
+                    </div>
+                    <p class="thoughts">adbnd dddhv acvdhnb cdughd sdghs DSDN </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- footer here -->
+        <div class="footerhere">
+            <h2>BeFoodie</h2>
+            <div class="foot-right">
+                <ul class="footlinks">
+                    <li>
+                        <h3>Website</h3>
+                        <ul class="website">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Report</a></li>
+                            <li><a href="#">Feedback</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Categories</h3>
+                        <ul class="categories">
+                            <li><a href="#">Beverages</a></li>
+                            <li><a href="#">South Indian</a></li>
+                            <li><a href="#">North Indian</a></li>
+                            <li><a href="#">Chinese</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Restaurants</h3>
+                        <ul class="restaurants">
+                            <li><a href="#">Join us</a></li>
+                            <li><a href="#">How we work</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <a href="#"><img src="Images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="Images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="Images/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="Images/linkedin.png" alt="linkedin"></a>
+                <a href="#"><img src="Images/social.png" alt="instagram"></a>
+                <section>
+                    <select>
+                        <option>English</option>
+                        <option>Hindi</option>
+                    </select>
+                    <aside id="bana">Banasthali Vidyapith</aside>
+                </section>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --BCOLOR: #fb2740;
+    --BGCOLOR: #D9D9D9;
+    --BORDERCOLOR: #5D5C5C;
+    --HEADCOLOR: #1E1E1E;
+    --PADDING: 10vh;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--BORDERCOLOR);
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}

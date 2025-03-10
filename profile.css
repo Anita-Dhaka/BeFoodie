@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --BCOLOR: whitesmoke;
+    --TEXTCOLOR: aliceblue;
+    --TEXTCOLOR2: black;
+    --MAINCOLOR: #FB2A3D;
+    --STARCOLOR: #FF0;
+    --FORMCOLOR: #333;
+    --PADDING: 0.8rem;
+}
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+header{
+    position: relative;
+}
+/* main img properties are here*/
+.mainimg {
+    width: 100%;
+    height: auto;
+    filter: brightness(80%);
+    position: absolute;
+}
+
+/* navigation bar */
+nav {
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Userbutton {
+    text-align: right;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+    margin-top: 1rem;
+}
+
+.Userbutton li {
+    display: inline-block;
+    padding-right: 2rem;
+    margin: 0.2rem 0 0.2rem 0;
+}
+button{
+    font: inherit;
+    background-color: transparent;
+    color: var(--TEXTCOLOR);
+    border: 0;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.navmenu {
+    text-align: right;
+    position: relative;
+    display: none;
+}
+
+.navmenu li {
+    display: block;
+    padding-right: 2rem;
+    margin: 0.2rem 0 0.2rem 0;
+}
+
+.navmenu li a {
+    text-decoration: none;
+    color: var(--TEXTCOLOR);
+}
+h2 {
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.4rem;
+    width: fit-content;
+    margin-top: 0.6rem;
+    color: var(--TEXTCOLOR);
+}
+
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--TEXTCOLOR);
+    padding-left: var(--PADDING);
+    margin-top: 1rem;
+    width: 65%;
+    height: 2.6rem;
+}
+
+.search input {
+    font: inherit;
+    color: var(--FORMCOLOR);
+    margin-left: var(--PADDING);
+    border: 0;
+    background: transparent;
+    width: 90%;
+}
+
+.search .material-symbols-outlined {
+    color: var(--FORMCOLOR);
+}
+/*  profile name and edit box are here  */
+.profilenedit{
+    position: absolute;
+    padding-top: 25%;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.profile{
+    width: 12%;
+    display: flex;
+    height: fit-content;
+    justify-content: space-evenly;
+    font-size: larger;
+}
+
+.accountimg{
+    width: 3rem;
+    height: auto;
+}
+h3{
+    display: inline-block;
+}
+.edit{
+    background-color: #FB2A3D;
+    width: 12%;
+    align-content: center;
+    border-radius: 1rem;
+    height: 3.8rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.editimg{
+    width: 4rem;
+    height: auto;
+    margin-top: 0.2rem;
+}
+/* main starts here */
+/* two flexbox and inside on flex 4 other flexbox */
+main{
+    display: flex;
+    padding-top: 40%;
+    height: 64rem;
+}
+.fourbutton{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--TEXTCOLOR);
+}
+.fourbutton button{
+    font: inherit;
+    font-weight: 600;
+    font-size: larger;
+    height: 20%;
+    width: 70%;
+    margin-left: 5rem;
+    color: var(--TEXTCOLOR);
+    background: linear-gradient(to right, rgb(172, 172, 172), black);
+    border-radius: 1rem;
+}
+.secondside{
+    flex-grow: 2;
+    margin-left: 5rem;
+}
+.inMiddle{
+    margin-left: 12rem;
+    margin-top: 3rem;
+}
+.star{
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+hr{
+    height: 23rem;
+}
+/* footer here */
+footer{
+    color: var(--TEXTCOLOR);
+    background-color: var(--TEXTCOLOR2);
+    padding: 3rem;
+}
+/* heading is here */
+.footerhere h2{
+    position: inherit;
+    top: 6rem;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    left: 1em;
+}
+.footlinks{
+    display: flex;
+    gap: 12em;
+    margin: 3rem 0 4rem 12rem ;
+}
+/* list style is here */
+footer ul{
+    list-style: none;
+}
+footer li{
+    line-height: 2em;
+}
+footer a{
+    text-decoration: none;
+    color: var(--TEXTCOLOR);
+}
+/* social icons are here */
+.social{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-right: 0.8rem;
+    margin-left: 1em;
+}
+.social a{
+    margin-right: 1rem;
+}
+.social a img{
+    height: 2rem;
+    width: auto;
+}
+.social section{
+    display: inline-block;
+    width: 80%;
+    text-align: end;
+}
+select{
+    font: inherit;
+    background-color: var(--TEXTCOLOR2);
+    color: var(--TEXTCOLOR);
+    margin-bottom: 2rem;
+    border: 0;
+    width: 8rem;
+    text-align: center;
+    appearance: none;
+}
+select:hover{
+    background-color: var(--FORMCOLOR);
+    cursor: pointer;
+    border-radius: 2rem;
+}
+section select aside{
+    display: inline-block;
+    margin-right: 2rem;
+}
+aside span{
+    margin-right: 1rem;
+}

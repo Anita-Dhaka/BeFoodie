@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Anita Dhaka">
+        <meta name="discription" content="This page is about a food delivery website">
+        <title>BeFoodie</title>
+        <link rel="stylesheet" href="1.css" title="css">
+        <link rel="icon" href="Images/taco.png">
+    </head>
+    <body>
+        <!-- header start here -->
+        <header>
+            <img class="mainimg" src="Images/restaurant2.jpg" alt="Main Image">
+            <ol class="navi">
+                <li><a href="Addresta.html">Add Restaurant</a></li>
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="signup.html">Sign in</a></li>
+            </ol>
+            <h1 class="heading1">BeFoodie</h1>
+            <h3>Discover the best food and drinks in Banasthali</h3>
+            <div class="searchbar">
+                <input type="text" id="search" placeholder="&#x1F50E; Search for Restaurant or a Dish">
+            </div>
+        </header>
+        <!-- main is here -->
+        <main>
+            <div class="rest">
+                <nav class="circle">
+                    <button class="arrow">&#10094;</button>
+                </nav>
+                <div class="resta">
+                    <img class="r1" src="Images/bella.jpg" alt="restaurant">
+                    <p class="shanus">Shanus</p>
+                    <p class="r1tag">Shanus tag line</p>
+                </div>
+                <div class="resta">
+                    <img class="r1" src="Images/jayka.jpg" alt="restaurant">
+                    <p class="shanus">Fun n' Frollic</p>
+                    <p class="r1tag">Fn'F tag line</p>
+                </div>
+                <div class="resta">
+                    <img class="r1" src="Images/Mukte.jpg" alt="restaurant">
+                    <p class="shanus">Mukteswari</p>
+                    <p class="r1tag">Mukte tag line</p>
+                </div>
+                <nav class="circle1">
+                    <button class="arrow">&#10095;</button>
+                </nav>
+            </div>
+            <div class="feedhead">
+                <h2>Feedback</h2>
+            </div>
+            <div class="feed">
+                <div class="user">
+                    <figure class="profile">
+                        <img class="account" src="Images/taco.png" alt="restaurant">
+                        <p class="username">User3<br>
+                            <span class="star star3" data-rating="1">&#9733;</span>
+                            <span class="star star3" data-rating="2">&#9733;</span>
+                            <span class="star star3" data-rating="3">&#9733;</span>
+                            <span class="star star3" data-rating="4">&#9733;</span>
+                            <span class="star star3" data-rating="5">&#9733;</span>
+                        </p>
+                        <script>
+                            const stars = document.querySelectorAll('.star3');
+                            stars.forEach((star3,index)=>{star3.addEventListener('click',()=>
+                        { stars.forEach((s)=>s.classList.remove('selected'));
+                            for (let i=0; i<=index; i++){
+                                stars[i].classList.add('selected');
+                            }
+                        });});
+                        </script>
+                    </figure>
+                    <form action="#" method="get">
+                        <textarea class="text" name="feedback" cols="28" rows="4">The website is very helpful and helps us to order food of any kind.</textarea>
+                    </form>
+                </div>
+                <div class="user">
+                    <figure class="profile">
+                        <img class="account" src="Images/taco.png" alt="restaurant">
+                        <p class="username">User3<br>
+                            <span class="star star2" data-rating="1">&#9733;</span>
+                            <span class="star star2" data-rating="2">&#9733;</span>
+                            <span class="star star2" data-rating="3">&#9733;</span>
+                            <span class="star star2" data-rating="4">&#9733;</span>
+                            <span class="star star2" data-rating="5">&#9733;</span>
+                        </p>
+                        <script>
+                            const stars2 = document.querySelectorAll('.star2');
+                            stars2.forEach((star2,index)=>{star2.addEventListener('click',()=>
+                        { stars2.forEach((s)=>s.classList.remove('selected'));
+                            for (let i=0; i<=index; i++){
+                                stars2[i].classList.add('selected');
+                            }
+                        });});
+                        </script>
+                    </figure>
+                    <form action="#" method="get">
+                        <textarea class="text" name="feedback" cols="28" rows="4">The website is very helpful and helps us to order food of any kind. All the restaurants copping with them are very well handled.</textarea>
+                    </form>
+                </div>
+                <div class="user">
+                    <figure class="profile">
+                        <img class="account" src="Images/taco.png" alt="restaurant">
+                        <p class="username">User3<br>
+                        <span class="star star1" data-rating="1">&#9733;</span>
+                        <span class="star star1" data-rating="2">&#9733;</span>
+                        <span class="star star1" data-rating="3">&#9733;</span>
+                        <span class="star star1" data-rating="4">&#9733;</span>
+                        <span class="star star1" data-rating="5">&#9733;</span>
+                        </p>
+                        <script>
+                            const stars1 = document.querySelectorAll('.star1');
+                            stars1.forEach((star1,index)=>{star1.addEventListener('click',()=>
+                        { stars1.forEach((s)=>s.classList.remove('selected'));
+                            for (let i=0; i<=index; i++){
+                                stars1[i].classList.add('selected'); star1
+                            }
+                        });});
+                        </script>
+                    </figure>
+                    <form action="#" method="get">
+                        <textarea class="text" name="feedback" cols="28" rows="4">The website is very helpful and helps us to order food of any kind. All the restaurants copping with them are very well handled.</textarea>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- Footer start here -->
+        <footer>
+            <div class="footerhere">
+                <p>BeFoodie</p>
+                <section class="columns">
+                    <h4>Website</h4>
+                    <ul>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="reprt.html">Report</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </section>
+                <section class="columns">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="beverages.html">Beverages</a></li>
+                        <li><a href="south.html">South Indian</a></li>
+                        <li><a href="north.html">North Indian</a></li>
+                        <li><a href="chinese.html">Chinese</a></li>
+                    </ul>
+                </section>
+                <section class="columns">
+                    <h4>Restaurants</h4>
+                    <ul>
+                        <li><a href="addrestaurant.html">Join us</a></li>
+                        <li><a href="howwework.html">How we work</a></li>
+                    </ul>
+                </section>
+                <div class="foot">
+                    <ol id="image">
+                        <li><img src="Images/facebook-5424833_640.webp" alt="facebook" id="fb"></li>
+                        <li><img src="Images/Twitter.png" alt="twitter" id="twit"></li>
+                        <li><img src="Images/yt.jpeg" alt="youtube" id="yt"></li>
+                        <li><img src="Images/linkk.jpeg" alt="linkedin" id="linked"></li>
+                        <li><img src="Images/Instra.png" alt="instagram" id="ig"></li>
+                    </ol>
+                    <span id="lang">English</span>
+                    <span id="bana">Banasthali Vidyapith</span>
+                </div>
+            </div>
+    
+        </footer>
+    </body>
+</html>
